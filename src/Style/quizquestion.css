@@ -1,0 +1,129 @@
+/* Estilo principal do contêiner */
+/* Estilo principal do contêiner */
+.radio-input {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background: #FFB6C1;
+    color: #000;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ajuste para 100% da largura disponível */
+    max-width: 900px; /* Limita a largura máxima do contêiner */
+    box-sizing: content-box;
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+  
+  /* Ocultar os inputs de rádio */
+  .radio-input input {
+    display: none;
+  }
+  
+  /* Informações da pergunta */
+  .info {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .question {
+    color: #313131;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  
+  .steps {
+    background-color: #000;
+    padding: 4px 8px;
+    color: #7ac977;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Estilização dos rótulos */
+  .radio-input label {
+    display: flex;
+    background-color: #FFB6C1;
+    padding: 14px;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(187, 187, 187, 0.2);
+    color: #000;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .radio-input label:hover {
+    background-color: rgba(24, 24, 24, 0.1);
+    border-color: #bbb;
+  }
+  
+  /* Estilização quando selecionado */
+  .radio-input input:checked + label {
+    border-color: red;
+    color: red;
+  }
+  
+  .radio-input input[value="value-2"]:checked + label {
+    border-color: rgb(22, 245, 22);
+    color: rgb(16, 184, 16);
+  }
+  
+  /* Estilo de resultados */
+  .result {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    display: none;
+    color: inherit;
+  }
+  
+  .result.success {
+    color: green;
+  }
+  
+  .result.error {
+    color: red;
+  }
+  
+  /* Estilo responsivo opcional */
+  @media (max-width: 768px) {
+    .radio-input {
+      padding: 10px;
+      width: 100%; /* Permite que ocupe toda a largura em dispositivos menores */
+    }
+  
+    .question {
+      font-size: 0.9rem;
+    }
+  
+    .steps {
+      font-size: 10px;
+    }
+  
+    .radio-input label {
+      font-size: 12px;
+      padding: 12px;
+    }
+  }
+  
+  /* Centralizar o contêiner no meio da tela */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que ocupe toda a altura da tela */
+    margin: 0;
+    background-color: #FFB6C1; /* Cor de fundo rosa */
+  }
+  
+  html {
+    height: 100%; /* Garante altura total para alinhamento */
+  }
+  

@@ -1,0 +1,164 @@
+:root {
+  --color-primary: #FFB6C1;
+  --color-secondary: #FFB6C1;
+  --color-background: #FFF0F5;
+  --color-text-dark: #4A4A4A;
+  --color-text-light: #FFFFFF;
+  --gradient-background: linear-gradient(145deg, #FFB6C1, #e98e9c);
+}
+
+.login-elegant-container, 
+.cadastro-elegant-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--color-background);
+  font-family: 'Lora', serif;
+}
+
+.login-wrapper,
+.cadastro-wrapper {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  padding: 3rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.login-header,
+.cadastro-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-logo,
+.cadastro-logo {
+  width: 150px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+.login-header h1,
+.cadastro-header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.login-header p,
+.cadastro-header p {
+  color: var(--color-text-dark);
+  opacity: 0.7;
+}
+
+.input-elegant-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-elegant-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+
+.input-elegant-wrapper {
+  position: relative;
+}
+
+.input-elegant-wrapper input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid rgba(140, 43, 226, 0.2);
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.input-elegant-wrapper input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.1);
+}
+
+.input-icon {
+  position: absolute;
+  left: -30px; /* Move o ícone para fora do campo */
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-primary);
+  opacity: 0.7;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.login-options,
+.login-register-section,
+.login-redirect-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.forgot-password,
+.register-link,
+.login-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-button,
+.cadastro-button {
+  width: 100%;
+  padding: 12px;
+  background: var(--gradient-background);
+  color: var(--color-text-light);
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.login-button:hover,
+.cadastro-button:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+  .login-wrapper,
+  .cadastro-wrapper {
+    margin: 2rem;
+    padding: 2rem;
+  }
+}
